@@ -27,3 +27,8 @@ The project is written using the frontend js library `react`.
 - create a new branch from master(latest branch) branch.
 - Run the command `npm install` to install all important library.
 - Run the command `npm start` to start the dev server and run the app locally on the port [3000].(http://localhost:3000/)
+
+## Environment
+The environment can be managed by creating a .env file in the root of the project.
+Following are the environment variables that can be set using the .env file.
+* `REACT_APP_API`:This Variable is used to setup the api host. example if runnin on local the `http://localhost:3000`.
