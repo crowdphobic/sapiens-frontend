@@ -1,3 +1,4 @@
+// function resposible for user login
 export function userLogin(reqBody) {
   return new Promise((resolve, reject) => {
     fetch(`${process.env.REACT_APP_API}/user/login`, {
@@ -16,7 +17,7 @@ export function userLogin(reqBody) {
     })
   })
 }
-
+//function to update user preference.
 export function updatePreference(reqBody, token) {
   return new Promise((resolve, reject) => {
     fetch(`${process.env.REACT_APP_API}/user/preference`, {

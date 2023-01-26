@@ -7,6 +7,8 @@ import './Preference.css'
 function Preference() {
   const {userEmail, userPreference, authToken} = useContext(UserContext);
   const navigate = useNavigate()
+  //NOTE:- usually we save our token into local storage and whenever we jump to any page directly we pick toke from localstorage and
+  //verify and keep the user logged-in if token is valid but here i am handling the token through context state.
   if(authToken == null) {
     navigate('/')
   }
